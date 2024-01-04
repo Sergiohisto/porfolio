@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Creador de Contenido − LinkedIn",
+    description:
+      "Divulgo sobre programación, investigacion casi siempre con enfoque histórico  y un poco de literatura.",
+    link: "https://www.linkedin.com/in/sergio-luis-arrieta-rodr%C3%ADguez-3a670b234/",
+  },
+  {
+    date: "Actualmente...",
+    title: "freelancer-TCM",
+    description:
+      "Profesor TCM de programacion y desarrollo web para niños. La utilizacion de Minecraft como herramienta para programar",
+      link: "https://www.linkedin.com/in/sergio-luis-arrieta-rodr%C3%ADguez-3a670b234/",
+  },
+  {
+    date: "Enero de 2016 - Octubre 2022",
+    title: "Asistente Judicial  − Rama Judicial de Colombia",
+    description:
+      "Responsable de la atención y asistencia tecnológica en las audiencias judiciales. Atención al usuario. Responsable del archivo físico y digital del despacho Judicial.",
+      link: "https://www.linkedin.com/in/sergio-luis-arrieta-rodr%C3%ADguez-3a670b234/",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

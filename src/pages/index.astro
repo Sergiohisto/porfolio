@@ -1,0 +1,83 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/Social.astro";
+import GitHubIcon from "../components/icons/GitHubIcon.astro";
+import Mail from "../components/icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Proyects from "../components/Proyects.astro";
+---
+
+<Layout
+  title="Porfolio de Sergio-Desarrollador y programador web "
+  description=""
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-32">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="https://media.licdn.com/dms/image/D4E03AQFFvQuX_ZHXcQ/profile-displayphoto-shrink_800_800/0/1694622350672?e=2147483647&v=beta&t=NmmXYpHuqs7cgCrwYleMeQeS5mhDy5DygV9GdgmGzE4"
+      />
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hola, soy SergioHisto <a
+          href="https://www.linkedin.com/in/sergio-luis-arrieta-rodr%C3%ADguez-3a670b234/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-balance max-w-[700px] text-white">
+        <span class="text-yellow-200"
+          >Tengo un año de experiencia en auto-aprendizaje en desarrollo web.
+          Actualmente curso un tecnólogo en Programación y análisis de Sotfware</span
+        >. <span class="text-red-200/90"
+          >Desarrollando web y creador de contenido academico como historiador</span
+        >. <span class="text-white">Soy de Colombia 🇨🇴</span>
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill
+          href="https://www.linkedin.com/in/sergio-luis-arrieta-rodr%C3%ADguez-3a670b234/"
+        >
+          <LinkedIn class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/Sergiohisto">
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:slarrieta02@gmail.com">
+          <Mail class="size-4 md:size-6" />
+          slarrieta02@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80"
+      >
+        <Briefcase class="size-7" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+    <SectionContainer id="proyectos">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80"
+      >
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Proyects />
+    </SectionContainer>
+  </main>
+</Layout>
